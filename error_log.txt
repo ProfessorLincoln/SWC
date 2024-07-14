@@ -1,0 +1,4 @@
+Error [2]: Undefined variable $undefinde in C:\wamp64\www\swc-project\register.php on line 33
+Error [2]: Undefined variable $undefinde in C:\wamp64\www\swc-project\register.php on line 33
+Uncaught Exception: Duplicate entry 'hazerlaser33508@gmail.com' for key 'users.email'
+Error [256]: Test 500 error in C:\wamp64\www\swc-project\error_page.php on line 42
