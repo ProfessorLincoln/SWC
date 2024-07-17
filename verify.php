@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'error_page.php';
 require 'config.php';
 
 if (!isset($_SESSION['email']) || !isset($_SESSION['verification_code'])) {

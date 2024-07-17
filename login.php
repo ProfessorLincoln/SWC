@@ -1,4 +1,5 @@
 <?php
+require 'error_page.php';
 session_start();
 
 $login_error = '';
@@ -29,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['is_admin'] = $is_admin;
 
             if (sendVerificationEmail($email, $verification_code)) {
-                header("Location: verify.php");
+                echo "<script>alert('Verification code has been sent to your email.'); window.location.href='verify.php';</script>";
                 exit();
             } else {
                 $login_error = "Failed to send verification code. Please try again.";
@@ -43,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $stmt->close();
     $conn->close();
+    
 }
 ?>
 
